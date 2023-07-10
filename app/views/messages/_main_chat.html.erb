@@ -6,7 +6,7 @@
       <%= link_to "チャットを終了する", room_path(@room), data: { turbo_method: :delete } %>
   </div>
 </div>
-<div class="main-main">
+<div class="messages">
     <%= render partial: 'message', collection: @messages %>
 </div>
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
