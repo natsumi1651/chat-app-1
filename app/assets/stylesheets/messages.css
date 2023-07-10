@@ -102,6 +102,10 @@
 
 }
 
+.upper-message {
+
+}
+
 .messenger-name {
  font-size: 16px;
  color: #434A54;
@@ -111,6 +115,10 @@
 .messenger-time {
   font-size: 12px;
   color: #999;
+
+}
+ 
+.lower-message {
 
 }
 

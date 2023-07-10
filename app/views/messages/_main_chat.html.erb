@@ -5,20 +5,7 @@
   </div>
 </div>
 <div class="main-main">
-   <div class="messages">
-      <div class="messenger">
-        <div class=messenger-name>TOM</div>
-        <div class="messenger-time">2020/03/31(Wed) 12:43:30</div>
-      </div>
-      <div class="message">おはよう</div>
-    </div>
-    <div class="messages">
-      <div class="messenger">
-        <div class=messenger-name>Sim</div>
-        <div class="messenger-time">2020/03/31(Wed) 12:43:30</div>
-       </div>
-       <div class="message">こんばんは</div>
-    </div>
+    <%= render partial: 'message', collection: @messages %>
 </div>
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
     <div class="form-input">
